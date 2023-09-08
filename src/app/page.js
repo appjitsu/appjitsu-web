@@ -127,9 +127,9 @@ export default function Home() {
                 robust server-side stack including Node.js, Express, GraphQL,
                 and PostgreSQL, we deliver custom-built solutions tailored to
                 your unique needs. Quality is our game, deadlines are our
-                promises, and we're committed to transforming your web-based
-                vision into a seamless, high-performing reality. Let's chat
-                today to kickstart your project.
+                promises, and we&apos;re committed to transforming your
+                web-based vision into a seamless, high-performing reality.
+                Let&apos;s chat today to kickstart your project.
               </div>
               <a
                 href="#contact"
@@ -190,9 +190,9 @@ export default function Home() {
                     We excel in crafting mobile apps that feel native to both
                     iOS and Android, thanks to our expertise in React Native.
                     From gaming apps to business solutions, we ensure your
-                    mobile presence is fast, secure, and user-friendly. Let's
-                    talk today about elevating your mobile strategy to the next
-                    level.
+                    mobile presence is fast, secure, and user-friendly.
+                    Let&apos;s talk today about elevating your mobile strategy
+                    to the next level.
                   </p>
                 </div>
               </div>
