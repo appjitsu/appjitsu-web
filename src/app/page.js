@@ -119,13 +119,13 @@ export default function Home() {
           className="bg-white bg-cover bg-center bg-no-repeat p-10 mt-20"
           style={{ backgroundImage: "url('background.jpg')" }}
         >
-          <div className="absolute inset-0 bg-black opacity-100 sm:opacity-50"></div>
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="relative z-10 md:flex mx-10">
             <div className="md:w-1/2">
               <div className="text-left text-white text-6xl font-bold mb-10 mt-8">
                 We Build Web and Mobile Apps
               </div>
-              <div className="text-left text-white mb-10">
+              <div className="text-left text-white mb-10 font-bold">
                 At our agency, we bring over 30 years of full-stack expertise to
                 create web and mobile apps that are as stunning as they are
                 functional. Specializing in front-end technologies like
