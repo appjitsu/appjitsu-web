@@ -11,6 +11,12 @@ export default function Home() {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
+
+    if (!name || !email || !message) {
+      alert("Please fill out all fields.");
+      return;
+    }
+
     const res = await fetch("/api/send-mail", {
       method: "POST",
       body: JSON.stringify({ name, email, message }),
@@ -234,7 +240,7 @@ export default function Home() {
             <div className="w-full md:w-1/2 p-4">
               <div className="px-4 py-6">
                 <h2 className="text-left text-white text-2xl font-bold py-10">
-                  About the Owner
+                  About the Owner - Jason Cochran
                 </h2>
                 <div className="flex items-center align-middle">
                   <Image
