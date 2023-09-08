@@ -252,11 +252,11 @@ export default function Home() {
                   />
                   <p className="text-left text-white">
                     With 30 years in the tech industry, Jason has been crafting
-                    HTML pages since the dawn of the web. Committed to clean
-                    code and sleek design, he meets every deadline with the
-                    precision of a master craftsman. His open communication
-                    style makes him not just an experienced developer, but also
-                    a trustworthy partner for your project.
+                    web and mobile experiences since the dawn of the web.
+                    Committed to clean code and sleek design, he meets every
+                    deadline with the precision of a master craftsman. His open
+                    communication style makes him not just an experienced
+                    developer, but also a trustworthy partner for your project.
                   </p>
                 </div>
               </div>
