@@ -119,7 +119,7 @@ export default function Home() {
           className="bg-white bg-cover bg-center bg-no-repeat p-10 mt-20"
           style={{ backgroundImage: "url('background.jpg')" }}
         >
-          <div className="absolute inset-0 bg-black opacity-50"></div>
+          <div className="absolute inset-0 bg-black opacity-100 sm:opacity-50"></div>
           <div className="relative z-10 md:flex mx-10">
             <div className="md:w-1/2">
               <div className="text-left text-white text-6xl font-bold mb-10 mt-8">
@@ -239,10 +239,10 @@ export default function Home() {
           <div className="flex flex-wrap justify-center">
             <div className="w-full md:w-1/2 p-4">
               <div className="px-4 py-6">
-                <h2 className="text-left text-white text-2xl font-bold py-10">
+                <h2 className="text-center text-white text-2xl font-bold py-10">
                   About the Owner - Jason Cochran
                 </h2>
-                <div className="flex items-center align-middle">
+                <div className="flex flex-col sm:flex-row items-center align-middle">
                   <Image
                     src="/jason.jpg"
                     alt="Jason Cochran - AppJitsu, LLC"
@@ -263,7 +263,7 @@ export default function Home() {
             </div>
             <div className="w-full md:w-1/2 p-4">
               <div className="px-4 py-6">
-                <h2 className="text-left text-white text-2xl font-bold py-10">
+                <h2 className="text-center text-white text-2xl font-bold py-10">
                   Contact Us
                 </h2>
                 <form
