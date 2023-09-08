@@ -116,10 +116,10 @@ export default function Home() {
           </div>
         </header>
         <div
-          className="bg-white bg-cover bg-center bg-no-repeat p-10 mt-20"
+          className="flex h-full bg-white bg-cover bg-center bg-no-repeat p-10 mt-20"
           style={{ backgroundImage: "url('background.jpg')" }}
         >
-          <div className="absolute inset-0 bg-black opacity-50"></div>
+          <div className="flex absolute min-h-screen h-full inset-0"></div>
           <div className="relative z-10 md:flex mx-10">
             <div className="md:w-1/2">
               <div className="text-left text-white text-6xl font-bold mb-10 mt-8">
