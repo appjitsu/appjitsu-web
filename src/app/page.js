@@ -3,6 +3,15 @@
 import Image from "next/image";
 import { useState } from "react";
 
+import {
+  FaGithub,
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaPinterest,
+  FaSquareXTwitter,
+} from "react-icons/fa6";
+
 export default function Home() {
   const [navbar, setNavbar] = useState(false);
 
@@ -34,22 +43,21 @@ export default function Home() {
       <div className="h-full mx-auto">
         <header className="z-20 bg-white fixed top-0 w-full">
           <nav className="relative z-20 bg-white shadow-md">
-            <div className="justify-between  bg-white px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-              <div>
-                <div className="flex items-center justify-between py-1 md:block">
-                  <a href="#" className="flex items-center justify-betwee">
-                    <Image
-                      src="/logo.jpg"
-                      alt="AppJitsu, LLC"
-                      width={75}
-                      height={75}
-                      className="mr-4"
-                    />
-                    <span className="text-2xl font-bold text-black">
-                      AppJitsu
-                    </span>
-                  </a>
-                  {/* <div className="md:hidden">
+            <div className="justify-between bg-white px-4 mx-auto md:items-center md:flex md:px-8 py-4">
+              <div className="flex">
+                <a href="#" className="flex items-center">
+                  <Image
+                    src="/logo.jpg"
+                    alt="AppJitsu, LLC"
+                    width={75}
+                    height={75}
+                    className="mr-4"
+                  />
+                  <span className="text-2xl font-bold text-black">
+                    AppJitsu
+                  </span>
+                </a>
+                {/* <div className="md:hidden">
                     <button
                       className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                       onClick={() => setNavbar(!navbar)}
@@ -85,15 +93,60 @@ export default function Home() {
                       )}
                     </button>
                   </div> */}
+              </div>
+              <div className="flex hidden md:block">
+                <div className="flex">
+                  <a
+                    href="https://github.com/appjitsu"
+                    target="_blank"
+                    className="text-black hover:text-red-600 px-3 py-2 rounded-md text-2xl font-medium"
+                  >
+                    <FaGithub />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61551025772031"
+                    target="_blank"
+                    className="text-black hover:text-red-600 px-3 py-2 rounded-md text-2xl font-medium"
+                  >
+                    <FaFacebook />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/appjitsullc/"
+                    target="_blank"
+                    className="text-black hover:text-red-600 px-3 py-2 rounded-md text-2xl font-medium"
+                  >
+                    <FaInstagram />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/appjitsu"
+                    target="_blank"
+                    className="text-black hover:text-red-600 px-3 py-2 rounded-md text-2xl font-medium"
+                  >
+                    <FaLinkedin />
+                  </a>
+                  <a
+                    href="https://www.pinterest.com/appjitsu/"
+                    target="_blank"
+                    className="text-black hover:text-red-600 px-3 py-2 rounded-md text-2xl font-medium"
+                  >
+                    <FaPinterest />
+                  </a>
+                  <a
+                    href="https://twitter.com/app_jitsu"
+                    target="_blank"
+                    className="text-black hover:text-red-600 px-3 py-2 rounded-md text-2xl font-medium"
+                  >
+                    <FaSquareXTwitter />
+                  </a>
                 </div>
               </div>
-              <div>
+              {/* <div>
                 <div
                   className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
                     navbar ? "block" : "hidden"
                   }`}
                 >
-                  {/* <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                  <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                     <li className="text-black">
                       <a>Home</a>
                     </li>
@@ -106,9 +159,9 @@ export default function Home() {
                     <li className="text-black">
                       <a>Contact US</a>
                     </li>
-                  </ul> */}
+                  </ul>
                 </div>
-              </div>
+              </div> */}
             </div>
           </nav>
           <div className="relative z-10 w-full flex bg-gray-300 justify-end align-middle text-black p-2 pr-8">
@@ -146,10 +199,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-white py-10">
+        <div className="bg-white py-10 px-6">
           <h2 className="text-black text-center text-2xl font-bold mb-4 mt-6">
             Our Technology Stack
-          </h2>{" "}
+          </h2>
           <Image
             src="/logos.png"
             alt="html5, css3, javascript, typescript, react.js, next.js, node.js, postgresql, mongodb, graphql, json, mysql, git, github"
@@ -248,7 +301,7 @@ export default function Home() {
           id="contact"
           className="relative w-full mb-20 items-center align-middle"
         >
-          <div className="flex flex-wrap justify-center">
+          <div className="flex flex-wrap justify-center space-between">
             <div className="w-full md:w-1/2 p-4">
               <div className="px-4 py-6">
                 <h2 className="text-center text-white text-2xl font-bold py-10">
@@ -260,7 +313,7 @@ export default function Home() {
                     alt="Jason Cochran - AppJitsu, LLC"
                     width={200}
                     height={200}
-                    className="grow-0 rounded-full mr-4 shadow-lg border-4 border-white"
+                    className="grow-0 rounded-full mr-4 mb-4 shadow-lg border-4 border-white"
                   />
                   <p className="text-left text-white">
                     With 30 years in the tech industry, Jason has been crafting
@@ -272,6 +325,50 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+            </div>
+            <div className="flex block md:hidden py-4">
+              <a
+                href="https://github.com/appjitsu"
+                target="_blank"
+                className="text-white hover:text-red-600 px-3 py-2 rounded-md text-3xl font-medium"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61551025772031"
+                target="_blank"
+                className="text-white hover:text-red-600 px-3 py-2 rounded-md text-3xl font-medium"
+              >
+                <FaFacebook />
+              </a>
+              <a
+                href="https://www.instagram.com/appjitsullc/"
+                target="_blank"
+                className="text-white hover:text-red-600 px-3 py-2 rounded-md text-3xl font-medium"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/appjitsu"
+                target="_blank"
+                className="text-white hover:text-red-600 px-3 py-2 rounded-md text-3xl font-medium"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://www.pinterest.com/appjitsu/"
+                target="_blank"
+                className="text-white hover:text-red-600 px-3 py-2 rounded-md text-3xl font-medium"
+              >
+                <FaPinterest />
+              </a>
+              <a
+                href="https://twitter.com/app_jitsu"
+                target="_blank"
+                className="text-white hover:text-red-600 px-3 py-2 rounded-md text-3xl font-medium"
+              >
+                <FaSquareXTwitter />
+              </a>
             </div>
             <div className="w-full md:w-1/2 p-4">
               <div className="px-4 py-6">
