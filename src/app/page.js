@@ -224,8 +224,8 @@ export default function Home() {
                     conversions, incorporating Stripe for seamless subscription
                     management. With a secure, scalable, and user-friendly
                     design, our online stores elevate your brand while boosting
-                    sales. Let's chat today to elevate your e-commerce strategy
-                    to the next level.
+                    sales. Let&apos;s chat today to elevate your e-commerce
+                    strategy to the next level.
                   </p>
                 </div>
               </div>
