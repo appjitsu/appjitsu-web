@@ -210,7 +210,7 @@ export default function Home() {
                   className="aspect-w-1 aspect-h-1 w-full rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8 mb-4"
                 >
                   <Image
-                    src="/ui-design.jpg"
+                    src="/ecommerce.jpg"
                     alt="UI/UX Design"
                     fill={true}
                     style={{ objectFit: "cover" }}
@@ -218,14 +218,14 @@ export default function Home() {
                   />
                 </div>
                 <div className="text-center">
-                  <h3 className="text-xl mb-2 font-bold">UI/UX Design</h3>
+                  <h3 className="text-xl mb-2 font-bold">E-Commerce</h3>
                   <p className="text-gray-700 text-sm">
-                    Our UI/UX design approach prioritizes user engagement,
-                    combining aesthetically pleasing interfaces with intuitive
-                    navigation. We employ data-driven techniques to optimize the
-                    user journey, ensuring that every interaction adds value.
-                    Reach out today to discuss how we can make your digital
-                    product not just functional, but irresistible.
+                    We specialize in building e-commerce platforms that drive
+                    conversions, incorporating Stripe for seamless subscription
+                    management. With a secure, scalable, and user-friendly
+                    design, our online stores elevate your brand while boosting
+                    sales. Let's chat today to elevate your e-commerce strategy
+                    to the next level.
                   </p>
                 </div>
               </div>
