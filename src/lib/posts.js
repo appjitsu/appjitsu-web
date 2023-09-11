@@ -41,7 +41,7 @@ export async function getPostBySlug(slug) {
 }
 
 export function getMetadata(post) {
-  console.log("getMetadata", post);
+  // console.log("getMetadata", post);
   if (!post)
     return {
       title: "Not Found",

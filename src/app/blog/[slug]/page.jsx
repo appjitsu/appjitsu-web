@@ -38,7 +38,7 @@ export async function generateMetadata({ params }) {
 
 export default async function Post({ params }) {
   const post = await getPostBySlug(params.slug);
-  console.log("post detail", post);
+  //   console.log("post detail", post);
 
   if (!post) {
     return <div>404</div>;
@@ -57,6 +57,7 @@ export default async function Post({ params }) {
           src={`${post.data.photo}?auto=format&fit=crop&w=2100&q=80`}
           className="w-full object-cover lg:rounded mb-10"
           fill={true}
+          alt={post.data.title}
         />
       </div>
       <div

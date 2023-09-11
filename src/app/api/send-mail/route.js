@@ -13,7 +13,7 @@ export async function POST(req) {
     });
 
     const { name, email, message } = await req.json();
-    console.log(name, email, message);
+    // console.log(name, email, message);
     const info = await transporter.sendMail({
       from: "no-reply@appjitsu.net",
       to: '"Jason Cochran - AppJitsu" <jason@appjitsu.net>',
@@ -28,7 +28,7 @@ export async function POST(req) {
       text: "Thank you for your reaching out to us! We will get back to you as soon as possible.",
     });
 
-    console.log("Message sent: %s", info.messageId);
+    // console.log("Message sent: %s", info.messageId);
 
     return new Response(
       JSON.stringify({ message: "Message sent successfully!" }),
