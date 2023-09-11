@@ -1,15 +1,40 @@
 import { Inter } from "next/font/google";
-import Script from "next/script";
 
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
-import "./globals.css";
+import "@/app/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "AppJitsu",
-  description: "AppJitsu is a web development agency based in Midland, TX USA.",
+  title: "AppJitsu - Web and Mobile Apps Development Agency, Midland, TX USA",
+  description:
+    "AppJitsu is a web and mobile apps development agency based in Midland, TX USA.",
+  robots: { index: true, follow: true },
+  manifest: "manifest.json",
+  openGraph: {
+    url: "https://appjitsu.net",
+    title: "AppJitsu - Web and Mobile Apps Development Agency, Midland, TX USA",
+    description:
+      "AppJitsu is a web and mobile apps development agency based in Midland, TX USA.",
+    siteName:
+      "AppJitsu - Web and Mobile Apps Development Agency, Midland, TX USA",
+    images: ["https://www.appjitsu.net/logo.png"],
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AppJitsu - Web and Mobile Apps Development Agency, Midland, TX USA",
+    description:
+      "AppJitsu is a web and mobile apps development agency based in Midland, TX USA.",
+    images: ["https://www.appjitsu.net/logo.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -41,7 +66,13 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </head>
       <body className={inter.className}>
-        {children}
+        <div className="min-h-screen overflow-hidden text-black">
+          <div className="h-full mx-auto">
+            <Nav />
+            {children}
+            <Footer />
+          </div>
+        </div>
         <noscript
           dangerouslySetInnerHTML={{
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}" height="0" width="0" style="display: none; visibility: hidden;"></iframe>`,
