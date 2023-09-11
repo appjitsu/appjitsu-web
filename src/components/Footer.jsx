@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="flex flex-wrap justify-center space-between">
         <div className="w-full md:w-1/2 p-4">
           <div className="px-4 py-6">
-            <h2 className="text-center text-white text-2xl font-bold py-10">
+            <h2 className="text-center text-white text-2xl font-bold pb-10">
               About the Owner - Jason Cochran
             </h2>
             <div className="flex flex-col sm:flex-row items-center align-middle">
