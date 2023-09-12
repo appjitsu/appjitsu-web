@@ -41,13 +41,13 @@ export default function SocialShare({ post }) {
         <a
           className="text-black hover:text-red-600 text-2xl"
           href={encodeURI(
-            `mailto:?subject=${title}&body=${description}\n\n${url}`
+            `https://www.linkedin.com/shareArticle?url=${url}&title=${title}&summary=${description}&source=https://www.appjitsu.net/blog}`
           )}
-          title="Share by Email"
+          title="Share on LinkedIn"
           target="_blank"
-          aria-label="Or Share By Email"
+          aria-label="Share on LinkedIn"
         >
-          <FaEnvelope />
+          <FaLinkedin />
         </a>
         <a
           className="text-black hover:text-red-600 text-2xl"
@@ -63,13 +63,13 @@ export default function SocialShare({ post }) {
         <a
           className="text-black hover:text-red-600 text-2xl"
           href={encodeURI(
-            `https://www.linkedin.com/shareArticle?url=${url}&title=${title}&summary=${description}&source=https://www.appjitsu.net/blog}`
+            `mailto:?subject=${title}&body=${description}\n\n${url}`
           )}
-          title="Share on LinkedIn"
+          title="Share by Email"
           target="_blank"
-          aria-label="Share on LinkedIn"
+          aria-label="Or Share By Email"
         >
-          <FaLinkedin />
+          <FaEnvelope />
         </a>
       </div>
     </div>
