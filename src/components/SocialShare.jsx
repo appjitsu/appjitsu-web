@@ -3,10 +3,11 @@ import {
   FaLinkedin,
   FaPinterest,
   FaSquareXTwitter,
+  FaEnvelope,
 } from "react-icons/fa6";
 
 export default function SocialShare({ post }) {
-  const url = `https://appjitsu.com/blog/${post.slug}`;
+  const url = `https://www.appjitsu.net/blog/${post.slug}`;
   const title = post.data.title;
   const photo = post.data.photo;
   const description = post.data.excerpt;
@@ -45,7 +46,9 @@ export default function SocialShare({ post }) {
           title="Share by Email"
           target="_blank"
           aria-label="Or Share By Email"
-        ></a>
+        >
+          <FaEnvelope />
+        </a>
         <a
           className="text-black hover:text-red-600 text-2xl"
           href={encodeURI(
