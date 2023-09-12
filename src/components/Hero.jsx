@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <div
       className="flex h-full bg-white bg-cover bg-center bg-no-repeat p-10 mt-20"
-      style={{ backgroundImage: "url('background.jpg')" }}
+      style={{ backgroundImage: "url('https://appjitsu.net/background.jpg')" }}
     >
       <div className="flex absolute min-h-screen h-full inset-0"></div>
       <div className="relative z-10 md:flex mx-10">
