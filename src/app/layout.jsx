@@ -64,6 +64,7 @@ export default function RootLayout({ children }) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <script src="//code.tidio.co/pjwfauwzp7xthmndkn829uf2wtjrchl4.js" async></script>
       </head>
       <body className={inter.className}>
         <div className="min-h-screen overflow-hidden text-black">
