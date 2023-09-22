@@ -13,12 +13,8 @@ export default function Hero() {
           <div className="text-left text-white mb-10 font-bold">
             At our agency, we bring over 30 years of full-stack expertise to
             create web and mobile apps that are as stunning as they are
-            functional. Specializing in front-end technologies like JavaScript,
-            TypeScript, React, and Next.js, and backed by a robust server-side
-            stack including Node.js, Express, GraphQL, and PostgreSQL, we
-            deliver custom-built solutions tailored to your unique needs.
-            Quality is our game, deadlines are our promises, and we&apos;re
-            committed to transforming your web-based vision into a seamless,
+            functional. We deliver quality apps that are robust and easy to use.
+            We are committed to transforming your web-based vision into a seamless,
             high-performing reality. Let&apos;s chat today to kickstart your
             project.
           </div>
