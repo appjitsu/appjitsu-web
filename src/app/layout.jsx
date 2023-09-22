@@ -65,6 +65,13 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#ffffff" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <script src="//code.tidio.co/pjwfauwzp7xthmndkn829uf2wtjrchl4.js" async></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RKL153LFE8"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-RKL153LFE8');
+        </script>
       </head>
       <body className={inter.className}>
         <div className="min-h-screen overflow-hidden text-black">
@@ -74,12 +81,6 @@ export default function RootLayout({ children }) {
             <Footer />
           </div>
         </div>
-        <noscript
-          dangerouslySetInnerHTML={{
-            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}" height="0" width="0" style="display: none; visibility: hidden;"></iframe>`,
-          }}
-        />
-        <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
       </body>
     </html>
   );
