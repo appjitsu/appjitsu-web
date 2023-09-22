@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import Script from 'next/script'
 
 import "@/app/globals.css";
 
@@ -64,14 +65,17 @@ export default function RootLayout({ children }) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
-        <script src="//code.tidio.co/pjwfauwzp7xthmndkn829uf2wtjrchl4.js" async></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RKL153LFE8"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-RKL153LFE8');
-        </script>
+        <Script src="//code.tidio.co/pjwfauwzp7xthmndkn829uf2wtjrchl4.js"/>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-RKL153LFE8" />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-RKL153LFE8');
+          `}
+        </Script>
       </head>
       <body className={inter.className}>
         <div className="min-h-screen overflow-hidden text-black">
