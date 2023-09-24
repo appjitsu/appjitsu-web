@@ -61,7 +61,7 @@ export default async function Post({ params }) {
         />
       </div>
       <div
-        className="w-full prose prose-headings:text-black prose-a:text-red-600"
+        className="w-full prose prose-headings:text-black prose-a:text-red-600 prose-strong:text-black"
         dangerouslySetInnerHTML={{ __html: post.html }}
       />
       <SocialShare post={post} />
