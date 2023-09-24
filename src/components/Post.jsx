@@ -4,7 +4,7 @@ export default function Post({ post }) {
   return (
     <article className="mb-6 p-6 bg-white text-black rounded-lg border border-gray-200 shadow-md dark:bg-gray-100 dark:border-gray-100">
       <div className="flex justify-between items-center mb-5">
-        <span className="text-sm">{post.data.date}</span>
+        <span className="text-sm">{new Date(post.data.date).toDateString()}</span>
       </div>
       <h2 className="mb-2 text-2xl font-bold tracking-tight">
         <Link href={`/blog/${post.slug}`}>{post.data.title}</Link>

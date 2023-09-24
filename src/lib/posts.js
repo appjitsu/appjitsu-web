@@ -14,10 +14,10 @@ function getPostData() {
     const fileContents = fs.readFileSync(fullPath, "utf8");
     const matterResult = matter(fileContents);
     return { slug, ...matterResult };
-  });
-  return allPostsData.sort((post1, post2) =>
-    new Date(post1.date) - new Date(post2.date)
+  }).sort((post1, post2) =>
+    new Date(post2.data.date) - new Date(post1.data.date)
   );
+  return allPostsData;
 }
 
 export function getAllPosts() {
