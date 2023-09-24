@@ -16,7 +16,7 @@ function getPostData() {
     return { slug, ...matterResult };
   });
   return allPostsData.sort((post1, post2) =>
-    new Date(post1.date) > new Date(post2.date) ? -1 : 1
+    new Date(post1.date) - new Date(post2.date)
   );
 }
 
